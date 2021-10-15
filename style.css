@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:hsl(225, 100%, 94%);
+    font-size:16px;
+    margin:0;
+    padding:0;
+}
+@media(min-width:375px){
+    body{
+        background-image:url("./images/pattern-background-desktop.svg");
+    }
+}
+@media(max-width:374px){
+    body{
+        background-image:url("./images/pattern-background-mobile.svg");
+    }
+}
+.container{
+    top:50%;
+    position: absolute;
+    width:450px;
+    height:650px;
+    transform: translate(-50%, -50%);
+    left:50%;
+    right:50%;
+    background:white;
+    border-radius: 20px;   
+}
+
+.top_bar img{
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+.bottom_bar{
+    width:350px;
+    margin:auto;
+    background:white;
+}
+.header{
+    text-align: center;
+}
+.bottom_bar p{
+    text-align: center;
+}
+.musicBar{
+    display:inline-grid;
+    grid-template-columns: repeat(3,2fr);
+    row-gap:0;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    border-radius:10px;
+    background:hsl(225, 100%, 98%);
+}
+.musicBar img{
+    margin:15px;
+    
+}
+.musicHeader{
+    font-weight: bold;
+    height:10px;
+}
+.musicBar a{
+    text-align: right;
+    margin:15px;
+    font-weight: bold;
+    grid-area: 1 / col4-start / last-line / 6;
+}
+.musicBar a:active{
+    color:hsl(225, 100%, 84%);
+}
+.header{
+    font-weight: 900;
+}
+.ad, .price{ /* reklama */
+    color:grey;
+}
+.btn-payment{
+    width:100%;
+    margin: 30px 0 30px 0;
+    height: 50px;
+    border-radius:10px;
+    border:none;
+    color:white;
+    background:hsl(245, 75%, 52%);
+    font-weight: bold;
+    box-shadow:0 10px 30px hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+.btn-cancel{
+    text-decoration: none;
+    color:grey;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.btn-payment:active{
+    background:hsl(225, 100%, 84%);
+}
+.btn-cancel:active{
+    color:hsl(223, 47%, 23%);
+    font-weight: bold;
+}
